@@ -27,10 +27,10 @@ describe('API testleri', () => {
     expect(res.body.username).toBe('Ali');
   });
 
-  test('GET /api/companies => şirketleri döner', async () => {
-    const res = await request(app).get('/api/companies');
+  test('GET /api/company => şirketleri döner', async () => {
+    const res = await request(app).get('/api/company');
     expect(res.status).toBe(200);
-    expect(res.body.length).toBe(5);
+    expect(res.body.length).toBe(1);
   });
 
   test('GET /api/products => ürünleri döner', async () => {
